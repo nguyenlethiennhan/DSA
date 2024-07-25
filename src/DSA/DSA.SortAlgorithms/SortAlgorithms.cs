@@ -1,4 +1,6 @@
-﻿namespace DSA.SortAlgorithms;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace DSA.SortAlgorithms;
 
 public static class SortAlgorithms
 {
@@ -48,29 +50,80 @@ public static class SortAlgorithms
         }
     }
 
-    public static void QuickSort(List<int> list, int start = 0, int? end = null)
+    public static void QuickSort(List<int> list, int low = 0, int? high = null)
     {
-        end ??= list.Count - 1;
+        high ??= list.Count - 1;
 
-        if (start < end)
+        if (low < high)
         {
-            int pivotIndex = start;
-            for (int i = start; i <= end; i++)
+            static int Partition(List<int> subList, int low, int high)
             {
-                if (i < pivotIndex && list[i] > list[pivotIndex])
+                int pivot = subList[high];
+                int i = low - 1;
+
+                for (int j = low; j < high; j++)
                 {
-                    (list[i], list[pivotIndex]) = (list[pivotIndex], list[i]);
-                    pivotIndex = i;
-                } 
-                else if (i > pivotIndex && list[i] < list[pivotIndex])
-                {
-                    (list[i], list[pivotIndex]) = (list[pivotIndex], list[i]);
-                    pivotIndex = i;
+                    if (subList[j] <= pivot)
+                    {
+                        i++;
+                        (subList[i], subList[j]) = (subList[j], subList[i]);
+                    }
                 }
+
+                (subList[i + 1], subList[high]) = (subList[high], subList[i + 1]);
+                return i + 1;
             }
-            
-            QuickSort(list, start, pivotIndex - 1);
-            QuickSort(list, pivotIndex + 1, end);
+
+            int pivotIndex = Partition(list, low, high.Value);
+            QuickSort(list, low, pivotIndex - 1);
+            QuickSort(list, pivotIndex + 1, high.Value);
+        }
+    }
+
+    public static void CountingSort(List<int> list)
+    {
+        int maxList = list.Max();
+        List<int> count = Enumerable.Repeat(0, maxList + 1).ToList();
+        foreach (int item in list)
+        {
+            count[item]++;
+        }
+
+        int i = 0;
+        for (int j = 0; j < count.Count; j++)
+        {
+            while (count[j]-- > 0)
+            {
+                list[i++] = j;
+            }
+        }
+    }
+
+    public static void RadixSort(List<int> list)
+    {
+        List<List<int>> radixList = Enumerable.Range(0, 10).Select(_ => new List<int>()).ToList();
+        int maxValue = list.Max();
+        int exp = 1;
+
+        while (maxValue / exp > 0)
+        {
+            foreach (int val in list)
+            {
+                int radixIndex = (val / exp) % 10;
+                radixList[radixIndex].Add(val);
+            }
+
+            int i = 0;
+            foreach (List<int> bucket in radixList)
+            {
+                foreach (int val in bucket)
+                {
+                    list[i++] = val;
+                }
+                bucket.Clear();
+            }
+
+            exp *= 10;
         }
     }
 }
