@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace DSA.SortAlgorithms;
+namespace DSA.Console;
 
 public static class ListExtensions
 {

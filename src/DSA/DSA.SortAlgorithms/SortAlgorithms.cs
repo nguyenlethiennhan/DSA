@@ -1,7 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿namespace DSA.SortAlgorithms;
 
-namespace DSA.SortAlgorithms;
-
+/// <summary>
+/// Sort Algorithms.
+/// </summary>
 public static class SortAlgorithms
 {
     public static void BubbleSort(List<int> list)
@@ -109,7 +110,7 @@ public static class SortAlgorithms
         {
             foreach (int val in list)
             {
-                int radixIndex = (val / exp) % 10;
+                int radixIndex = val / exp % 10;
                 radixList[radixIndex].Add(val);
             }
 
@@ -124,6 +125,37 @@ public static class SortAlgorithms
             }
 
             exp *= 10;
+        }
+    }
+
+    public static void MergeSort(List<int> list)
+    {
+        static List<int> Merge(List<int> leftList, List<int> rightList)
+        {
+            int i = 0;
+            int j = 0;
+            List<int> resultList = [];
+
+            while (i < leftList.Count && j < rightList.Count)
+            {
+                resultList.Add(leftList[i] < rightList[j] ? leftList[i++] : rightList[j++]);
+            }
+
+            resultList.AddRange(i < leftList.Count ? leftList.GetRange(i, leftList.Count - i) : rightList.GetRange(j, rightList.Count - j));
+
+            return resultList;
+        }
+
+        if (list.Count > 1)
+        {
+            int mid = list.Count / 2;
+            List<int> leftList = list.GetRange(0, mid);
+            List<int> rightList = list.GetRange(mid, list.Count - mid);
+            MergeSort(leftList);
+            MergeSort(rightList);
+
+            list.Clear();
+            list.AddRange(Merge(leftList, rightList));
         }
     }
 }
