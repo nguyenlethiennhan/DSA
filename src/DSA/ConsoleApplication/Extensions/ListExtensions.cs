@@ -1,4 +1,4 @@
-﻿namespace ConsoleApplication.Extensions;
+﻿namespace DSA.ConsoleApplication.Extensions;
 
 public static class ListExtensions
 {

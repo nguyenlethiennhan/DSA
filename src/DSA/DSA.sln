@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{58F3635F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA.Tests.Unit", "DSA.Tests.Unit\DSA.Tests.Unit.csproj", "{26E24331-CA0F-4BFD-B162-4C7BDA8133ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{182F7C34-51B2-4A75-917A-539582B7652B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA.ConsoleApplication", "ConsoleApplication\DSA.ConsoleApplication.csproj", "{182F7C34-51B2-4A75-917A-539582B7652B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA.SearchAlgorithms", "DSA.SearchAlgorithms\DSA.SearchAlgorithms.csproj", "{88AC6143-86B4-4284-9570-23FFF84BE55F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{182F7C34-51B2-4A75-917A-539582B7652B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{182F7C34-51B2-4A75-917A-539582B7652B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{182F7C34-51B2-4A75-917A-539582B7652B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88AC6143-86B4-4284-9570-23FFF84BE55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88AC6143-86B4-4284-9570-23FFF84BE55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88AC6143-86B4-4284-9570-23FFF84BE55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88AC6143-86B4-4284-9570-23FFF84BE55F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

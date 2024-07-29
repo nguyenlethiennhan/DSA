@@ -3,9 +3,9 @@
 namespace DSA.Tests.Unit.SortAlogorithms.Models;
 
 /// <summary>
-/// Sort algorithms test caces.
+/// Sort algorithm test cace.
 /// </summary>
-public class SortAlgorithmsTestCase
+public class SortAlgorithmTestCase
 {
     /// <summary>
     /// Description.
@@ -18,7 +18,7 @@ public class SortAlgorithmsTestCase
     public List<int> Input { get; set; }
 
     /// <summary>
-    /// ExpectedOutput.
+    /// Expected Output.
     /// </summary>
     public List<int> ExpectedOutput { get; set; }
 }

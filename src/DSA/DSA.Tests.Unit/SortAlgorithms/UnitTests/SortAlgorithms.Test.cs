@@ -10,13 +10,13 @@ namespace DSA.Tests.Unit.SortAlgorithms.UnitTests;
 /// </summary>
 public class SortAlgorithmsTest
 {
-    private List<SortAlgorithmsTestCase>? testCases;
+    private List<SortAlgorithmTestCase>? testCases;
     private const string DATA_PATH = "/SortAlgorithms/Data/sort-algorithms-data.json";
 
     [Fact]
     public void Setup()
     {
-        testCases ??= JsonExtensions.LoadData<List<SortAlgorithmsTestCase>>(DATA_PATH);
+        testCases ??= JsonExtensions.LoadData<List<SortAlgorithmTestCase>>(DATA_PATH);
     }
 
     [Fact]
@@ -26,7 +26,7 @@ public class SortAlgorithmsTest
         Setup();
 
         // act & assert
-        foreach (SortAlgorithmsTestCase testCase in testCases!)
+        foreach (SortAlgorithmTestCase testCase in testCases!)
         {
             List<int> input = new(testCase.Input);
             DSA.SortAlgorithms.SortAlgorithms.BubbleSort(input);
@@ -41,7 +41,7 @@ public class SortAlgorithmsTest
         Setup();
 
         // act & assert
-        foreach (SortAlgorithmsTestCase testCase in testCases!)
+        foreach (SortAlgorithmTestCase testCase in testCases!)
         {
             List<int> input = new(testCase.Input);
             DSA.SortAlgorithms.SortAlgorithms.SelectionSort(input);
@@ -56,7 +56,7 @@ public class SortAlgorithmsTest
         Setup();
 
         // act & assert
-        foreach (SortAlgorithmsTestCase testCase in testCases!)
+        foreach (SortAlgorithmTestCase testCase in testCases!)
         {
             List<int> input = new(testCase.Input);
             DSA.SortAlgorithms.SortAlgorithms.InsertionSort(input);
@@ -71,7 +71,7 @@ public class SortAlgorithmsTest
         Setup();
 
         // act & assert
-        foreach (SortAlgorithmsTestCase testCase in testCases!)
+        foreach (SortAlgorithmTestCase testCase in testCases!)
         {
             List<int> input = new(testCase.Input);
             DSA.SortAlgorithms.SortAlgorithms.QuickSort(input);
@@ -86,7 +86,7 @@ public class SortAlgorithmsTest
         Setup();
 
         // act & assert
-        foreach (SortAlgorithmsTestCase testCase in testCases!)
+        foreach (SortAlgorithmTestCase testCase in testCases!)
         {
             if (!testCase.Description.Contains("negative") && testCase.Input.Count > 0)
             {
@@ -104,7 +104,7 @@ public class SortAlgorithmsTest
         Setup();
 
         // act & assert
-        foreach (SortAlgorithmsTestCase testCase in testCases!)
+        foreach (SortAlgorithmTestCase testCase in testCases!)
         {
             if (!testCase.Description.Contains("negative") && testCase.Input.Count > 0)
             {
@@ -122,7 +122,7 @@ public class SortAlgorithmsTest
         Setup();
 
         // act & assert
-        foreach (SortAlgorithmsTestCase testCase in testCases!)
+        foreach (SortAlgorithmTestCase testCase in testCases!)
         {
             List<int> input = new(testCase.Input);
             DSA.SortAlgorithms.SortAlgorithms.MergeSort(input);

@@ -19,11 +19,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DSA.SearchAlgorithms\DSA.SearchAlgorithms.csproj" />
     <ProjectReference Include="..\DSA.SortAlgorithms\DSA.SortAlgorithms.csproj" />
   </ItemGroup>
 
 	<ItemGroup>
 		<None Update="SortAlgorithms\Data\sort-algorithms-data.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="SearchAlgorithms\Data\linear-search-algorithms-data.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="SearchAlgorithms\Data\binary-search-algorithms-data.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
