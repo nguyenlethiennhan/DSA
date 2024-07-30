@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSA.SearchAlgorithms", "DSA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSA.ConsoleApplication", "DSA.ConsoleApplication\DSA.ConsoleApplication.csproj", "{B45609A4-C220-4E62-9A52-E575349752AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA.LinkedLists", "DSA.LinkedLists\DSA.LinkedLists.csproj", "{451FDE87-C787-4F7D-B86B-301287D9CD20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSA.LinkedLists", "DSA.LinkedLists\DSA.LinkedLists.csproj", "{451FDE87-C787-4F7D-B86B-301287D9CD20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA.StacksAndQueues", "DSA.StacksAndQueues\DSA.StacksAndQueues.csproj", "{F9211FA9-DA95-4575-A42E-BE3D733E20A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{451FDE87-C787-4F7D-B86B-301287D9CD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{451FDE87-C787-4F7D-B86B-301287D9CD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{451FDE87-C787-4F7D-B86B-301287D9CD20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9211FA9-DA95-4575-A42E-BE3D733E20A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9211FA9-DA95-4575-A42E-BE3D733E20A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9211FA9-DA95-4575-A42E-BE3D733E20A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9211FA9-DA95-4575-A42E-BE3D733E20A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

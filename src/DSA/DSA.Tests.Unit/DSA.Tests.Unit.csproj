@@ -22,6 +22,7 @@
     <ProjectReference Include="..\DSA.LinkedLists\DSA.LinkedLists.csproj" />
     <ProjectReference Include="..\DSA.SearchAlgorithms\DSA.SearchAlgorithms.csproj" />
     <ProjectReference Include="..\DSA.SortAlgorithms\DSA.SortAlgorithms.csproj" />
+    <ProjectReference Include="..\DSA.StacksAndQueues\DSA.StacksAndQueues.csproj" />
   </ItemGroup>
 
 	<ItemGroup>

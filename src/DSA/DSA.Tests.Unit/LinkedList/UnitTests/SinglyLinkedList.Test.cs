@@ -99,6 +99,22 @@ public class SinglyLinkedListTest
         Assert.Equal(expectedResult, result);
     }
 
+    [Theory]
+    [MemberData(nameof(RandomHelpers.GetRandomData), MemberType = typeof(RandomHelpers))]
+    public void Count_Correct(int[] values)
+    {
+        // arrange
+        SinglyLinkedList linkedList = new();
+        Node? head = GenerateLinkedListFromArray(values);
+        int expectedResult = values.Length;
+
+        // act
+        int result = linkedList.Count(head);
+
+        // assert
+        Assert.Equal(expectedResult, result);
+    }
+
     /// <summary>
     /// Creates a linked list from an array of integers by inserting elements at the beginning of the list.
     /// </summary>

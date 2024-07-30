@@ -53,4 +53,11 @@ public interface ILinkedListOperations
     /// <param name="position">The position at which to insert the new node.</param>
     /// <returns>The head node of the linked list after insertion.</returns>
     Node? InsertAtPosition(Node? head, int value, int position);
+
+    /// <summary>
+    /// Counts the number of nodes in the linked list.
+    /// </summary>
+    /// <param name="head">The head node of the linked list.</param>
+    /// <returns>The number of nodes in the linked list.</returns>
+    int Count(Node? head);
 }

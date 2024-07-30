@@ -69,4 +69,15 @@ public class SinglyLinkedList : ILinkedListOperations
         }
         return list;
     }
+
+    /// <inheritdoc/>
+    public int Count(Node? head)
+    {
+        int count = 0;
+        for (Node? node = head; node != null; node = node.Next)
+        {
+            count++;
+        }
+        return count;
+    }
 }
