@@ -14,7 +14,7 @@ public class SearchAlgorithmsTest
     public void LinearSearch_Correct()
     {
         // arrange
-        List<SearchAlgorithmTestCase> testCases = JsonExtensions.LoadData<List<SearchAlgorithmTestCase>>("/SearchAlgorithms/Data/linear-search-algorithms-data.json");
+        List<SearchAlgorithmTestCase> testCases = JsonHelpers.LoadData<List<SearchAlgorithmTestCase>>("/SearchAlgorithms/Data/linear-search-algorithms-data.json");
 
         // act & assert
         testCases.ForEach(testCase =>
@@ -29,7 +29,7 @@ public class SearchAlgorithmsTest
     public void BinarySearch_Correct()
     {
         // arrange
-        List<SearchAlgorithmTestCase> testCases = JsonExtensions.LoadData<List<SearchAlgorithmTestCase>>("/SearchAlgorithms/Data/binary-search-algorithms-data.json");
+        List<SearchAlgorithmTestCase> testCases = JsonHelpers.LoadData<List<SearchAlgorithmTestCase>>("/SearchAlgorithms/Data/binary-search-algorithms-data.json");
 
         // act & assert
         testCases.ForEach(testCase =>

@@ -7,7 +7,7 @@ namespace DSA.Tests.Unit.Helpers
     /// <summary>
     /// Json extensions
     /// </summary>
-    public static class JsonExtensions
+    public static class JsonHelpers
     {
         /// <summary>
         /// Loads data from a JSON file located at the specified relative path and deserializes it into an object of type <typeparamref name="T"/>.

@@ -16,7 +16,7 @@ public class SortAlgorithmsTest
     [Fact]
     public void Setup()
     {
-        testCases ??= JsonExtensions.LoadData<List<SortAlgorithmTestCase>>(DATA_PATH);
+        testCases ??= JsonHelpers.LoadData<List<SortAlgorithmTestCase>>(DATA_PATH);
     }
 
     [Fact]
