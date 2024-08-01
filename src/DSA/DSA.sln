@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSA.LinkedLists", "DSA.Link
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA.StacksAndQueues", "DSA.StacksAndQueues\DSA.StacksAndQueues.csproj", "{F9211FA9-DA95-4575-A42E-BE3D733E20A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA.Trees", "DSA.Trees\DSA.Trees.csproj", "{9E88990D-2705-4CBB-8C6A-6FDA6A6981F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{F9211FA9-DA95-4575-A42E-BE3D733E20A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9211FA9-DA95-4575-A42E-BE3D733E20A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9211FA9-DA95-4575-A42E-BE3D733E20A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E88990D-2705-4CBB-8C6A-6FDA6A6981F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E88990D-2705-4CBB-8C6A-6FDA6A6981F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E88990D-2705-4CBB-8C6A-6FDA6A6981F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E88990D-2705-4CBB-8C6A-6FDA6A6981F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
